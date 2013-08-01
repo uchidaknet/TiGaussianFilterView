@@ -3,7 +3,7 @@ TiGaussianFilterView
 A Titanium module for iOS.  
 Gaussian Filter for TiUIView.  
 
-![screenshot](./sample.png)
+![screenshot](./screen.png)
 
 Detail
 ------
