@@ -114,7 +114,4 @@ THE SOFTWARE.
 
 };
 ==================================================
-
-
----
 © 2013 [Keisuke Uchida](http://uchidak.net) All rights reserved.
