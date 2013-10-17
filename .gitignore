@@ -1,4 +1,7 @@
-tmp
-bin
-build
+# Ti
+/tmp
+/bin
+/build
+
+# OSX
 .DS_Store

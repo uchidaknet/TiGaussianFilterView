@@ -1,38 +1,54 @@
-TiGaussianFilterView
-======================
-A Titanium module for iOS.  
-Gaussian Filter for TiUIView.  
+TiGaussianFilterView() {
+==================================================
+This is a Titanium module for iOS.  
+This module supports gaussian filter for TiUIView.  
 
 ![screenshot](./screen.png)
 
-Detail
-------
-This module extends Ti.UI.View Class by Category.  
-When require this module, new properties are added to the "Ti.UI.View".  
+<a name="TOC">Table of Contents</a>
+--------------------------------------------------
+1. [Introduction](#Introduction)
+1. [Installtion](#Installtion)
+1. [Usage](#Usage)
+1. [License](#License)
+
+<a name="Introduction">Introduction</a>
+------------------------------------------------
+This module extends Ti.UI.View class by Category.  
+When require this module, new properties are added to Ti.UI.View.  
 It is possible to use in any View Component that inherits the TiUIView.  
 For example, TiUIButton, TiUIView, TiUITableView, and so on.  
 
 The following are properties that are newly added.  
 
-* rasterizationScale : float(ex 0.5)  
+- `rasterizationScale` : float(ex 0.5)  
 Blur degree
 
-* shouldRasterize : true or false  
+- `shouldRasterize` : true or false  
 Rasterize the view's layer
 
-* kCAFilterTrilinear : true or false  
+- `kCAFilterTrilinear` : true or false  
 Set kCAFilterTrilinear to the layer's minificationFilter 
 
-* kCAFilterNearest : true or false  
+- `kCAFilterNearest` : true or false  
 Set kCAFilterNearest to the layer's minificationFilter 
 
-How to
-------
-### install this module ###
-    var TiGaussianFilterView = require('net.uchidak.tigfview');
-    Ti.API.info("module is => " + TiGaussianFilterView);
+**[[⬆]](#TOC)**
 
-### Gaussian blur view ###
+<a name="Installtion">Installation</a>
+------------------------------------------------
+### Install this module
+```javascript
+var TiGaussianFilterView = require('net.uchidak.tigfview');
+Ti.API.info("module is => " + TiGaussianFilterView);
+```
+
+**[[⬆]](#TOC)**
+
+<a name="Usage">Usage</a>
+------------------------------------------------
+### Gaussian blur view
+```javascript
     var b = Ti.UI.createButton({
         top : 10,
         left : 10,
@@ -43,8 +59,10 @@ How to
         shouldRasterize : true,
         kCAFilterTrilinear : true,
     });
+```
 
-### mosaic view ###
+### Mosaic view
+```javascript
     var b = Ti.UI.createButton({
         top : 10,
         left : 10,
@@ -56,15 +74,20 @@ How to
         kCAFilterTrilinear : true,
         kCAFilterNearest : true
     });
+```
 
+**[[⬆]](#TOC)**
 
-Reference:)
---------
+<a name="Thanks">Thanks:)</a>
+------------------------------------------------
 [iosjp.com](http://www.iosjp.com/dev/archives/759 "iosjp.com")
+
+**[[⬆]](#TOC)**
  
-License
-----------
-TiGaussianBlurView  
+<a name="License">License and Credit</a>
+------------------------------------------------
+TiGaussianFilterView  
+
 The MIT License (MIT)
 
 Copyright (c) 2013 Keisuke Uchida
@@ -86,3 +109,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+**[[⬆]](#TOC)**
+
+};
+==================================================
+
+
+---
+© 2013 [Keisuke Uchida](http://uchidak.net) All rights reserved.
